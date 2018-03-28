@@ -15,3 +15,9 @@ function genQuote() {
 	var randNum = Math.floor(Math.random() * (quotesArr.length));
 	document.getElementById('showQuote').innerHTML = quotesArr[randNum];
 }
+
+function addQuote() {
+	var quoteToAdd = document.getElementById("addQuoteTextArea").value;
+	document.getElementById("addQuoteTextArea").value = "";
+	quotesArr.push(quoteToAdd);
+}
